@@ -12,10 +12,10 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/jbr/rubydoop'
   s.rubyforge_project = 'rubydoop'
 
-  s.files      = Dir['rubydoop.rb']
+  s.files      = Dir['lib/**/*']
 
   s.rdoc_options  = ["--charset=UTF-8"]
-  s.require_paths = ["./"]
+  s.require_paths = ["lib"]
 
   s.rubygems_version = '1.3.6'
 
