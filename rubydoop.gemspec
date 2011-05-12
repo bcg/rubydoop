@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.authors = ['Jacob Rothstein']
   s.email   = 'jbr@yakbarber.com'
-  s.date    = '2011-4-21'
+  s.date    = '2011-04-21'
 
   s.description = 'Simple Ruby Sugar for Hadoop Streaming'
   s.homepage = 'https://github.com/jbr/rubydoop'
