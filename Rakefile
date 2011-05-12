@@ -2,7 +2,7 @@
 require 'fileutils'
 require 'tmpdir'
 
-def em_mongo_version
+def rubydoop_version
   File.read("VERSION").strip
 end
 
@@ -10,13 +10,13 @@ namespace :gem do
 
   desc "build gem"
   task :build do
-    puts "Building em-mongo #{em_mongo_version}"
+    puts "Building rubydoop #{rubydoop_version}"
     system "gem build rubydoop.gemspec -q"
   end
 
   desc "release gem"
   task :release do
-    system "gem push rubydoop-#{em_mongo_version}.gem"
+    system "gem push rubydoop-#{rubydoop_version}.gem"
   end
 
 end
