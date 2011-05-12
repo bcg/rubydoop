@@ -45,6 +45,9 @@ at_exit do
         values << thisvalue
       end
     end
+    if values.any? && key
+      @reduce.call key,values
+    end
   when 'simulate'
     raise unless File.exists?(ARGV.last)
     exec "cat #{ARGV.last} | #{$0} map | sort | #{$0} reduce"
