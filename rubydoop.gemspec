@@ -4,12 +4,12 @@ Gem::Specification.new do |s|
   s.name    = 'rubydoop'
   s.version = version
 
-  s.authors = ['Jacob Rothstein']
-  s.email   = 'jbr@yakbarber.com'
+  s.authors = ['Brenden Grace']
+  s.email   = 'brenden.grace@gmail.com'
   s.date    = '2011-04-21'
 
   s.description = 'Simple Ruby Sugar for Hadoop Streaming'
-  s.homepage = 'https://github.com/jbr/rubydoop'
+  s.homepage = 'https://github.com/bcg/rubydoop'
   s.rubyforge_project = 'rubydoop'
 
   s.files      = Dir['lib/**/*']
