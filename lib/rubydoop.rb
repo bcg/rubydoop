@@ -30,6 +30,8 @@ at_exit do
     while line = STDIN.gets
       if line =~ /^([^\t]+)\t(.+)$/
         @map.call $1, $2
+      else
+        @map.call line, nil
       end
     end
   when 'reduce'
